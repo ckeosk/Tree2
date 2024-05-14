@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<!--회원가입 index 페이지-->
+    <h1> Index Page!</h1>
+    <a href="/member/save">회원가입</a>
+    <a href="/member/login">로그인</a>
+    <a href="/member/">회원목록</a>
+
+<!--게시판 index 페이지-->
+    <!--글작성 버튼 누르면 saveReq() 함수 호출-->
+    <button onclick="saveReq()">글작성</button>
+    <a href="/board/save">글작성(링크)</a>
+</body>
+
+<script>
+    // function saveReq() { } 와 같은 표현방법
+    const saveReq = () => {
+        // 일단 board로 설정하고 진행
+        //index 페이지가 떴을 때 해당 주소를 요청함
+        location.href ="/board/save";
+    }
+</script>
+
+</html>
